@@ -7,17 +7,13 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.android"
+        applicationId "com.example.retrofit_practice"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        buildConfigField("String","Naver_Client_Id", Naver_Client_Id)
-        buildConfigField("String","Naver_Client_Secret", Naver_Client_Secret)
-
     }
 
     buildTypes {
@@ -38,4 +34,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Gson
+    implementation "com.google.code.gson:gson:2.8.6"
+
+    // Retrofit 2
+    // Retrofit requires at minimum Java 8+ or Android API 21+.
+    implementation "com.squareup.retrofit2:retrofit:2.7.2"
+    implementation "com.squareup.retrofit2:converter-gson:2.7.2"
 }
