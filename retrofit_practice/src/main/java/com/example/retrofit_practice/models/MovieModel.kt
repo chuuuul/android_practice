@@ -1,8 +1,6 @@
 package com.example.retrofit_practice.models
 
 
-import com.google.gson.annotations.SerializedName
-
 data class MovieModel(
     val actor: String,
     val director: String,
