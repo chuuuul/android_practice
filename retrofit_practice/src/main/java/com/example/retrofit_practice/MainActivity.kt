@@ -2,6 +2,7 @@ package com.example.retrofit_practice
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.retrofit_practice.models.SearchResultModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,11 +18,14 @@ class MainActivity : AppCompatActivity(), Callback<SearchResultModel> {
     private val MOVIE_SEARCH_API_URL = "https://openapi.naver.com"
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
 
+
+        Toast.
         val retrofit = Retrofit.Builder()
             .baseUrl(MOVIE_SEARCH_API_URL)
             .addConverterFactory(GsonConverterFactory.create())
