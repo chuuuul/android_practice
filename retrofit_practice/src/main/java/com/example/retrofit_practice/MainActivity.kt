@@ -2,7 +2,6 @@ package com.example.retrofit_practice
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.retrofit_practice.models.SearchResultModel
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,8 +23,6 @@ class MainActivity : AppCompatActivity(), Callback<SearchResultModel> {
 
         setContentView(R.layout.activity_main)
 
-
-        Toast.
         val retrofit = Retrofit.Builder()
             .baseUrl(MOVIE_SEARCH_API_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -39,7 +36,7 @@ class MainActivity : AppCompatActivity(), Callback<SearchResultModel> {
     }
 
     override fun onResponse(call: Call<SearchResultModel>, response: Response<SearchResultModel>) {
-        editText.text = response.body().toString()
+        tv.text = response.body().toString()
 
         Log.d("chul", "${response.body()}")
     }
