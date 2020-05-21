@@ -1,4 +1,4 @@
-package com.chul.fragment_practice.first_exam
+package com.chul.fragment_practice.exam1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

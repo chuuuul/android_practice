@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".first_exam.SecondFragment"
+    tools:context=".exam1.SecondFragment"
     android:background="#ff0000ff">
 
 

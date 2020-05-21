@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffcccccc"
-    tools:context=".second_exam.ContentFragment">
+    tools:context=".exam2.ContentFragment">
 
     <TextView
         android:id="@+id/tv_fragmentContent"
