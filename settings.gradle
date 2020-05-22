@@ -1,5 +1,4 @@
 rootProject.name='android'
-include ':app'
 include ':retrofit_practice'
 include ':alarm_practice'
 include ':fragment_practice'
